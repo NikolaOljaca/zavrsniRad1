@@ -1,14 +1,14 @@
 let navbar = document.querySelector('.header .navbar');
 let menuBtn = document.querySelector('#menu-btn');
 
+   menuBtn.classList.remove('fa-times');
+   navbar.classList.remove('active');
 menuBtn.onclick = () =>{
    menuBtn.classList.toggle('fa-times');
    navbar.classList.toggle('active');
 };
 
 window.onscroll = () =>{
-   menuBtn.classList.remove('fa-times');
-   navbar.classList.remove('active');
 };
 
 var swiper = new Swiper(".home-slider", {
@@ -124,4 +124,3 @@ function checkTime(i) {
 }
 
 
-lightGallery(document.querySelector('.gallery .gallery-container'));
